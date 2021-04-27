@@ -20,10 +20,25 @@ if (parolaUno.length < parolaDue.length) {
 Il software deve chiedere per 10 volte all’utente di inserire un numero.
 Il programma stampa la somma di tutti i numeri inseriti. */
 
-var numero;
+/* var numero;
 var somma = 0;
 for (var i = 0; i < 10; i++){
     numero = Number(prompt("Inserisci un numero!"));
     somma = somma + numero;
 }
-console.log(somma);
+console.log(somma); */
+
+
+/* Snack 4:
+In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, 
+chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.  */
+
+var lista = ["mario", "luigi", "fabio", "gino", "vincenzo", "paolo"];
+var nomeUtente = prompt("Inserisci il tuo nome!");
+var messaggio = "Non sei invitato!";
+for (var i = 0; i < lista.length; i++){
+    if (nomeUtente == lista[i]) {
+        messaggio = "Benvenuto!";
+    }
+}
+console.log(messaggio);
