@@ -33,7 +33,7 @@ console.log(somma); */
 In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, 
 chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.  */
 
-var lista = ["mario", "luigi", "fabio", "gino", "vincenzo", "paolo"];
+/* var lista = ["mario", "luigi", "fabio", "gino", "vincenzo", "paolo"];
 var nomeUtente = prompt("Inserisci il tuo nome!").toLowerCase();
 var messaggio = "Non sei invitato!";
 for (var i = 0; i < lista.length; i++){
@@ -41,4 +41,22 @@ for (var i = 0; i < lista.length; i++){
         messaggio = "Benvenuto!";
     }
 }
-console.log(messaggio);
+console.log(messaggio); */
+
+
+/* Snack 5:
+Crea un array vuoto.
+Chiedi per 6 volte all’utente di inserire un numero,
+se è dispari inseriscilo nell’array.  */
+
+var lista = [];
+for (var i = 0; i < 6; i++){
+    var numero = Number(prompt("Inserisci un numero!"));
+    if (numero % 2 != 0) {
+        lista.push(numero);
+    }
+}
+//stampo la lista per vedere che numeri ha inserito
+for (var i = 0; i < lista.length; i++){
+    console.log(lista[i]);
+}
