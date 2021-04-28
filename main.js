@@ -93,11 +93,20 @@ do {
 /* snack 8 - blocco 1
 Chiedi un numero di 4 cifre all’utente
 e calcola la somma di tutte le cifre che compongono il numero.  */
+var numero = Number(prompt("Inserisci un numero di 4 cifre!"));
+var somma = 0;
+while (numero > 0) {
+    somma = somma + (numero % 10);
+    numero = numero / 10;
+    numero = parseInt(numero);
+}
+console.log(somma);
 
-var numero = Number(prompt("Inserisci un numero!"));
+//altro modo senza parseInt
+/* var numero = Number(prompt("Inserisci un numero!"));
 somma = 0;
 while (numero > 0) {
     somma = somma + (numero % 10) | 0;
     numero = numero / 10;
 }
-console.log(somma);
+console.log(somma); */
