@@ -49,7 +49,7 @@ Crea un array vuoto.
 Chiedi per 6 volte all’utente di inserire un numero,
 se è dispari inseriscilo nell’array.  */
 
-var lista = [];
+/* var lista = [];
 for (var i = 0; i < 6; i++){
     var numero = Number(prompt("Inserisci un numero!"));
     if (numero % 2 != 0) {
@@ -59,4 +59,16 @@ for (var i = 0; i < 6; i++){
 //stampo la lista per vedere che numeri ha inserito
 for (var i = 0; i < lista.length; i++){
     console.log(lista[i]);
+} */
+
+
+/* snack 6 - blocco 1:
+Stampa il cubo dei primi N numeri,
+dove N è un numero indicato dall’utente. */
+
+var numero = Number(prompt("Inserisci un numero!"));
+
+for (var i = 1; i <= numero; i++){
+    var operazione = i * i * i;
+    console.log(operazione);
 }
