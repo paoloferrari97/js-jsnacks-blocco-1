@@ -72,3 +72,19 @@ for (var i = 1; i <= numero; i++){
     var operazione = i * i * i;
     console.log(operazione);
 }
+
+//con while
+/* var i = 1;
+while (i <= numero) {
+    var operazione = i * i * i;
+    console.log(operazione);
+    i++;
+} */
+
+//con do-while
+/* var i = 1;
+do {
+    var operazione = i * i * i;
+    console.log(operazione);
+    i++;
+} while (i <= numero); */
