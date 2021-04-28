@@ -69,7 +69,7 @@ dove N è un numero indicato dall’utente. */
 var numero = Number(prompt("Inserisci un numero!"));
 
 for (var i = 1; i <= numero; i++){
-    var operazione = i * i * i;
+    var operazione = Math.pow(i, 3); //Math.pow(base, esponente);
     console.log(operazione);
 }
 
