@@ -66,12 +66,12 @@ for (var i = 0; i < lista.length; i++){
 Stampa il cubo dei primi N numeri,
 dove N è un numero indicato dall’utente. */
 
-var numero = Number(prompt("Inserisci un numero!"));
+/* var numero = Number(prompt("Inserisci un numero!"));
 
 for (var i = 1; i <= numero; i++){
     var operazione = Math.pow(i, 3); //Math.pow(base, esponente);
     console.log(operazione);
-}
+} */
 
 //con while
 /* var i = 1;
@@ -88,3 +88,16 @@ do {
     console.log(operazione);
     i++;
 } while (i <= numero); */
+
+
+/* snack 8 - blocco 1
+Chiedi un numero di 4 cifre all’utente
+e calcola la somma di tutte le cifre che compongono il numero.  */
+
+var numero = Number(prompt("Inserisci un numero!"));
+somma = 0;
+while (numero > 0) {
+    somma = somma + (numero % 10) | 0;
+    numero = numero / 10;
+}
+console.log(somma);
