@@ -90,17 +90,27 @@ do {
 } while (i <= numero); */
 
 
+//snack 7
+//stampa le potenze di 2 fino a 1000 (2^n)
+var counter = 0;
+while (Math.pow(2, counter) < 1000) {
+    
+    console.log(Math.pow(2, counter));
+    counter++;
+}
+
+
 /* snack 8 - blocco 1
 Chiedi un numero di 4 cifre all’utente
 e calcola la somma di tutte le cifre che compongono il numero.  */
-var numero = Number(prompt("Inserisci un numero di 4 cifre!"));
+/* var numero = Number(prompt("Inserisci un numero di 4 cifre!"));
 var somma = 0;
 while (numero > 0) {
     somma = somma + (numero % 10);
     numero = numero / 10;
     numero = parseInt(numero);
 }
-console.log(somma);
+console.log(somma); */
 
 //altro modo senza parseInt
 /* var numero = Number(prompt("Inserisci un numero!"));
@@ -109,4 +119,27 @@ while (numero > 0) {
     somma = somma + (numero % 10) | 0;
     numero = numero / 10;
 }
+console.log(somma); */
+
+//con stringa numerica inserita, divide le cifre della stringa in singolarmente in un array
+/* var numero = "1234";
+var numeri_array = numero.split(""); //inserisce le cifre singole dentro un array
+var somma = 0;
+
+for (var i = 0; i < numeri_array.length; i++){
+    var elemento = numeri_array[i];
+    somma += Number(elemento); //con Number trasformo la stringa in numero in modo da fare la somma e non la concatenazione
+}
+
+console.log(somma); */
+
+//versione 2 - stringa
+/* var somma = 0;
+var numero = "1234";
+
+for (var i = 0; i < numero.length; i++){
+    var elemento = numero[i]; //funziona sulle stringhe come fosse un array
+    somma += Number(elemento); //con Number trasformo la stringa in numero in modo da fare la somma e non la concatenazione
+}
+
 console.log(somma); */
