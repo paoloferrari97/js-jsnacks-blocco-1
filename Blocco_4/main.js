@@ -3,7 +3,15 @@
 //Nome = palla
 //Peso = 10
 
-var palla = {
-    nome: "palla",
+var Palla = {
+    nome: "Palla",
     peso: 10
 };
+
+
+
+//Snack 1B
+//Attraverso un prompt dare la possibilità all’utente di 
+//modificare il peso della palla.
+
+Palla.peso = Number(prompt("Inserisci il peso della palla!"));
